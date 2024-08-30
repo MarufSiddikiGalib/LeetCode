@@ -10,7 +10,8 @@ public:
             int pop = x % 10;   // Extract the last digit
             x /= 10;            // Remove the last digit from x
 
-            // Check for overflow before reversing the number
+            // Check for overflow before reversing the number 
+            //  ensures that the final digit addition does not cause an overflow.
             if (reversedNumber > INT_MAX/10 || (reversedNumber == INT_MAX / 10 && pop > 7))             {
                 return 0; // Positive overflow case
             }
