@@ -2,7 +2,7 @@ class Solution {
 public:
     int lengthOfLastWord(string s) {
         
-        // Initialise strin g with 0
+        // Initialise string with 0
         int length = 0;
         
         // Start from the end of the string
